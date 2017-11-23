@@ -23,6 +23,7 @@ public class ThunderBrowerPlayer implements Player {
 
     @Override
     public void vol(int vol) {
-       
+       this.vol=vol;
+        System.out.println("音量："+vol+" vol");
     }
 }
