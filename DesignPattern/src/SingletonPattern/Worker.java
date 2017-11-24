@@ -9,20 +9,19 @@ import org.junit.Test;
 public class Worker {
 
     @Test
-    public  void  puchLock(){
-        
+    public void puchLock() {
 
-     CEO ceoChu=CEO.getInstance();
 
-     ceoChu.talk();
-        CEO ceoChu01=CEO.getInstance();
+        HungryCeo ceoChu_day01 = HungryCeo.getInstance();
 
-        ceoChu01.talk();
-        CEO ceoChu02=CEO.getInstance();
+        ceoChu_day01.talkWithWorker();
+        HungryCeo ceoChu_day02 = HungryCeo.getInstance();
 
-        ceoChu02.talk();
+        ceoChu_day02.talkWithWorker();
+        HungryCeo ceoChu_day03 = HungryCeo.getInstance();
 
-        
-        
+        ceoChu_day03.talkWithWorker();
+
+     //这里可以看到当我们无论调用N次都只会创建一个对象除反射意外（反射可以调用类的方法包括私有方法）
     }
 }
