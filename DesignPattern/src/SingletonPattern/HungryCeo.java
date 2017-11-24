@@ -20,7 +20,7 @@ public class HungryCeo {
         if(hungryCeo==null){
             hungryCeo=new HungryCeo();
             i++;
-            System.out.println(i);
+            System.out.println("调用 "+i+" 次");
         }
 
         return hungryCeo;
